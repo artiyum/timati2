@@ -1,0 +1,105 @@
+
+public class main {
+
+	public static void main(String[] args) {
+
+		//create string full 
+		String fullName;
+		String firstName = "Dani";
+		String lastName = "Shovevani";
+		
+		fullName = firstName + " " + lastName;
+		
+		System.out.print("Hello, " + fullName + "!");
+
+		
+		int grade1 = 66;
+		int grade2 = 83;
+		int grade3 = 60;
+		int grade4 = 14;
+		int grade5 = 89;
+		
+		int sum = grade1+grade2+grade3+grade4+grade5;
+		
+		System.out.println("sum is - " +sum);
+		
+		double avg; 
+		avg = (double)sum/5;
+		
+		System.out.println("avg is - " +avg);
+		
+		
+		//firstName = "Dani";
+		//lastName = "Shovevani";
+		//fullName = "Dani" + "Shovevani"
+		
+		
+		//string actions
+
+		// 0123456789....
+		//"Dani Shovevani" - 14 תווים
+		
+		int lenOfFullName = fullName.length();
+		System.out.println("String Length - " +lenOfFullName);
+
+		
+		// 0123456789....
+		//"Dani Shovevani" -> "vev"
+		String subStringFullName = fullName.substring(8,11);
+		System.out.println("Sub String - " +subStringFullName);
+
+		//"Shovevani"
+		char letter = fullName.charAt(6);
+		int indexOfH = fullName.indexOf('h');
+		
+		System.out.println("index in last name is - " +indexOfH+ " the letter of last name - "+letter);
+
+		
+		int number1 = 367;
+		int number2 = 987;
+		int number3 = 312;
+
+		//sum2 = 367 + 987 + 312 => 1666
+		int sum2 = number1+number2+number3;
+		System.out.println("sum2 before - "+sum2);
+
+		
+		
+		//number4 = 367 + 312 => 679
+		int number4 = number1+number3;
+		System.out.println("Before - "+number4);
+		
+		
+		
+		//number4 = 679 + 1 => 680
+		number4 = number4 + 1; 
+		System.out.println("After - "+number4);
+
+		int number5 = 40;
+		//sum2 = 1666 + 680 + 40
+		sum2 =  sum2 + number4 + number5;
+		System.out.println("sum2 After - "+sum2);
+		
+		double avg2 = (double)sum2/5;
+		System.out.println("avg2 - "+avg2);
+		
+		
+		//extra
+		String str = String.valueOf(number4);
+
+		//index -> 012
+		// str => "680"
+		System.out.println("The second char is - "+str.charAt(1));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
